@@ -28,7 +28,7 @@ class UdpInterface(object):
         """
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.bind((self.addr, self.port))
-        print "connected to socket"
+        print ("connected to socket")
         return sock
 
     def read_socket(self):
